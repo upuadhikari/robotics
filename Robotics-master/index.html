@@ -1,0 +1,125 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+			Smart Home
+		</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<body>	
+	<div class="container">	
+	<!--- College Logo--->	
+	<div class="top">
+	    <a href="http://www.texasintl.edu.np/"><img src="img/1.png"></a>
+	</div>
+
+	<!--Title of project--->
+	<div class="content-title">
+	   <p class="title">Smart Home System</p>
+	</div>
+
+	<!--- About System--->
+	<div class="content-about">
+		<img src="img/2.jpg" width=400 height=350>
+		<div class="about" style="float: right;">
+			<p style="font-size: 30px; color: #787676;"><b>About System</b></p><hr>
+			<p><strong>Hardwares:</strong></p>
+			<ul type="radio">
+				<li> Raspberry pi 4</li>
+				<li> Object Sensor</li>
+				<li> Thermo Sensor</li>
+				<li> Motor</li>
+			</ul>
+			<p><strong>Features:</strong></p>
+			<p>Thermometer, WaterLevel detector, Humidity, Door automation, Light automation</p>
+		</div>
+		<hr>
+	</div>
+
+	<!---Features--->
+	<div class="content-features">
+		 <p style="font-size: 30px; color: #787676; text-align: center;">Features</p><hr>
+		 <div class="features1">
+		    <span id="day"></span>, <span id="month"></span> <span id="date"></span>, <span id="year"></span><br>
+		    <p id="watch" style="font-style: 'Raleway', sans-serif;"></p>
+		 <div class="temp" style="float: right;background-color: #cb4a4a;">
+		   <p style="text-align: center; font-size: 25px; color: white">Temperature</p><hr>
+		     <div class="temp-content">
+              <img src="img/icon2.png" width="180" height="180">
+              <span style="font-size: 80px; padding:10px; font-family: 'Oxygen', sans-serif; color: white;">5°C</span> 
+            </div>
+        </div><br>
+        <span><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</span><br>
+        <span><i class="fas fa-tint"></i> Humidity = 50%</span>
+        </div>
+        <hr>
+
+        <div class="row">
+        	 <div class="col-md-3" style="padding:5px">
+        	 	<p style="text-align: center; font-size: 20px">Light</p><hr>
+        	 	<div class="blub">
+				<img id="myImg" src="img/pic_bulboff.gif" alt="bulb" style="padding-left: 35px;"><br><br>
+				<button class="btn btn-warning " id="manual" >Manual</button>
+				<button class="btn btn-dark" >Automatic</button>
+				<button class="btn btn-warning auto" onclick="document.getElementById('myImg').src='img/pic_bulbon.gif'" style="display: none;">Turn on</button>
+				<button class="btn btn-dark auto1" onclick="document.getElementById('myImg').src='img/pic_bulboff.gif'" style="display: none;">Turn off</button>
+			   </div>
+        	 </div>
+
+        	 <div class="col-md-3">
+        	 	<p style="text-align: center; font-size: 20px">Door</p><hr>
+        	 	<div class="blub">
+				<img id="myImg1" src="img/door3.png" alt="door" style="padding-right: 35px; width: 200px; height: 180px"><br><br>
+				<button class="btn btn-warning " id="manual1" >Manual</button>
+				<button class="btn btn-dark bttn" >Automatic</button>
+				<button class="btn btn-warning at" onclick="document.getElementById('myImg1').src='img/door2.png'" style="display:none;">Open</button>
+				<button class="btn btn-dark at1" onclick="document.getElementById('myImg1').src='img/door3.png'" style="display:none;">Close</button>
+			   </div>
+        	 </div>
+
+        	 <div class="col-md-3">
+        	 	<p style="text-align: center; font-size: 20px">Water Level</p><hr>
+        	 	<input type="number" value="" name="water-level"/>  
+				<svg  viewBox="0 0 400 400" >
+				<defs>
+				<mask id="bottleMask">
+				  <path fill="#FFFFFF" d="M 275,225 L 225,375 L 375,375 L 325,225 Z" />
+				</mask>
+				</defs>
+
+				<g id="maskedLiquid" mask="url(#bottleMask)">
+				<path id="tubeLiquid" fill="#74ccf4" d="M 225,225 Q 262,220, 300,225 Q 337,230, 375,225 L 375,375 L 225,375 Z" />
+				</g>
+				<path id="bottleShape" d="M 275,225 L 225,375 L 375,375 L 325,225 Z" fill="none" stroke="#444444" stroke-width="10"/>
+
+				<g id="waterLevel">
+				<text x="380" y="340" font-size="24" fill="#555">Low</text>
+				</g>
+				</svg>
+        	 </div>
+
+        	 <div class="col-md-3">
+        	 	<p style="text-align: center; font-size: 20px">Smoke</p><hr>
+        	 </div>
+        </div>
+	</div><br>
+
+	<!---Camera--->
+	<div class="content-camera">
+		<p style="text-align: center; font-size: 50px;">Surveillance Camera</p>
+		<div class="camera">
+			<span style="color: red;">live</span>
+		</div>
+	</div>
+
+
+	</div>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript">
+    	
+    </script>>
+	</body>
+	</html>
